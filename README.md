@@ -6,7 +6,7 @@ This site blends personality with professionalism ~ sharing my background, exper
 
 🚀 Live Website
 
-👉 https://zainmohammed15.github.io/My-Website/
+https://zainmohammed15.github.io/portfolio/
 
 📄 About This Project
 
