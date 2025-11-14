@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Between Two Worlds 🌍</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Between Two Worlds</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">Story</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+      <button id="nightModeToggle" class="night-mode-toggle" title="Toggle night mode">🌙</button>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Welcome Popup -->
+  <div id="welcomePopup" class="popup">
+    <div class="popup-inner">
+      <button class="popup-close" aria-label="Close">&times;</button>
+      <h3>Plot Twist Alert</h3>
+      <p>My career took more turns than Glasgow weather. Get comfy, grab a chai, and have a browse.</p>
+      <button class="popup-btn">Let's roll</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg" data-parallax></div>
+      <div class="hero-content">
+        <h1>Between Two Worlds</h1>
+        <p class="hero-subtitle">From Lead Technician to IT Technician, to someone brave enough to study Artificial Intelligence.<br>A journey that makes sense only if you tilt your head, squint a little, and pretend you understand my decisions.</p>
+        <p class="hero-quote">"A safar (journey) powered by chai (tea), patience, and a quietly confused brain."</p>
+        <div class="hero-cta">
+          <a href="about.html" class="btn btn-primary">Read My Story</a>
+          <a href="skills.html" class="btn btn-secondary">Skills and Timeline</a>
+        </div>
+        <p class="scroll-arrow">Scroll to explore ↓</p>
+      </div>
+    </section>
+
+    <!-- Section Separator -->
+    <div class="section-separator">
+      <div class="separator-line"></div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+      <div class="container">
+        <h2 class="section-title">A Few Moments From Life</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-lightbox>
+            <img src="1.jpeg" alt="A quiet moment">
+            <div class="gallery-caption">A quiet moment of sukoon (peace)</div>
+          </div>
+          <div class="gallery-item" data-lightbox>
+            <img src="2.jpeg" alt="Somewhere I got lost">
+            <div class="gallery-caption">Somewhere I probably got lost</div>
+          </div>
+          <div class="gallery-item" data-lightbox>
+            <img src="3.jpeg" alt="Overthinking moment">
+            <div class="gallery-caption">Trying not to overthink</div>
+          </div>
+          <div class="gallery-item" data-lightbox>
+            <img src="4.jpeg" alt="A memorable night">
+            <div class="gallery-caption">One of those nights you remember</div>
+          </div>
+          <div class="gallery-item" data-lightbox>
+            <img src="5.jpeg" alt="Walking and thinking">
+            <div class="gallery-caption">Just walking and thinking about life</div>
+          </div>
+          <div class="gallery-item" data-lightbox>
+            <img src="6.jpeg" alt="Living the moment">
+            <div class="gallery-caption">Living the moment</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Separator -->
+    <div class="section-separator">
+      <div class="separator-line"></div>
+    </div>
+
+    <!-- About Summary -->
+    <section class="about-summary">
+      <div class="container">
+        <h2 class="section-title">A Few Things About Me</h2>
+        <p>I started my working life in the automotive world, slowly growing into a Lead Technician. I spent years diagnosing strange noises, fixing complicated issues, and watching apprentices discover new ways to drop tools.</p>
+        <p>I worked in security, food service, Royal Mail, and debt recovery. Every role taught me something new about people, patience, and how to stay calm when life feels chaotic.</p>
+        <p>Now I work as an IT Technician, helping people with their technology, and repeating the classic words "Have you tried turning it off and on again" far more than I imagined.</p>
+        <p>I am also studying Artificial Intelligence, which means I willingly signed up to argue with Python at two in the morning. Progress is progress.</p>
+
+        <div class="interests-grid">
+          <div class="interest-card">
+            <h3>Food</h3>
+            <p>Trying new dishes and appreciating the stories behind them.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Travel</h3>
+            <p>New places help me reset, reflect, and walk more than I do at home.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Walks and Nature</h3>
+            <p>A quiet walk clears the head better than any therapy session.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Horse Riding</h3>
+            <p>Peaceful, grounding, and humbling when the horse decides to think for both of us.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Cars</h3>
+            <p>Once a Lead Technician, always someone who appreciates machines that work. And the ones that don't.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Purpose</h3>
+            <p>Trying to live a life that makes sense, even when it sometimes doesn't.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Separator -->
+    <div class="section-separator">
+      <div class="separator-line"></div>
+    </div>
+
+    <!-- What I Bring Section -->
+    <section class="brings-section">
+      <div class="container">
+        <h2 class="section-title">What I Bring To The Table</h2>
+        <div class="brings-grid">
+          <div class="brings-card">
+            <h3>Problem Solving</h3>
+            <p>I stay calm under pressure and work things out step by step, even when everything screams for attention.</p>
+          </div>
+          <div class="brings-card">
+            <h3>Communication</h3>
+            <p>Years of customer facing work taught me how to explain things simply, clearly, and without judgment.</p>
+          </div>
+          <div class="brings-card">
+            <h3>Learning Fast</h3>
+            <p>If something matters, I learn it properly, even if it takes time and chai (tea).</p>
+          </div>
+          <div class="brings-card">
+            <h3>Staying Calm</h3>
+            <p>Chaos and I have an agreement. It acts up, I stay calm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Separator -->
+    <div class="section-separator">
+      <div class="separator-line"></div>
+    </div>
+
+    <!-- Small Wins Section -->
+    <section class="wins-section">
+      <div class="container">
+        <h2 class="section-title">Small Wins That Mean a Lot</h2>
+        <div class="wins-grid">
+          <div class="win-item">
+            <p>Fixing something without breaking something else.</p>
+          </div>
+          <div class="win-item">
+            <p>Understanding a Python error.</p>
+          </div>
+          <div class="win-item">
+            <p>A clean room on a Sunday.</p>
+          </div>
+          <div class="win-item">
+            <p>A long walk that clears the head.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Separator -->
+    <div class="section-separator">
+      <div class="separator-line"></div>
+    </div>
+
+    <!-- Things That Built Me Section -->
+    <section class="built-section">
+      <div class="container">
+        <h2 class="section-title">Things That Built Me</h2>
+        <div class="built-grid">
+          <div class="built-item">
+            <h4>Glasgow</h4>
+            <p>Home, heart, and honest truth</p>
+          </div>
+          <div class="built-item">
+            <h4>Family Values</h4>
+            <p>Foundation of everything</p>
+          </div>
+          <div class="built-item">
+            <h4>Sabr</h4>
+            <p>Patience (the Islamic way)</p>
+          </div>
+          <div class="built-item">
+            <h4>Long Nights</h4>
+            <p>Thinking, growing, learning</p>
+          </div>
+          <div class="built-item">
+            <h4>Quiet Walks</h4>
+            <p>Clarity and sukoon (peace)</p>
+          </div>
+          <div class="built-item">
+            <h4>Work Ethic</h4>
+            <p>Show up, do the work</p>
+          </div>
+          <div class="built-item">
+            <h4>Mistakes</h4>
+            <p>The best teachers</p>
+          </div>
+          <div class="built-item">
+            <h4>Chai (Tea)</h4>
+            <p>Liquid truth</p>
+          </div>
+          <div class="built-item">
+            <h4>Growth</h4>
+            <p>Always, always growing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Rotator -->
+    <div class="quote-rotator"></div>
+
+    <!-- Floating Quote -->
+    <div class="floating-quote"></div>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <div class="lightbox-container">
+      <img id="lightboxImage" src="" alt="">
+      <p id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+  </div>
+
+  <!-- Chai Loading Animation -->
+  <div id="chaiLoading" class="chai-loading">
+    <div class="chai-cup-load">☕</div>
+    <p>Brewing…</p>
+  </div>
+
+  <!-- Back to Top Chai Button -->
+  <button id="backToTop" class="back-to-top" title="Back to top">☕</button>
+  <div id="scrollPopup" class="popup">
+    <div class="popup-inner">
+      <button class="popup-close" aria-label="Close">&times;</button>
+      <h3>Still Here?</h3>
+      <p>Respect. Most people get distracted by food at this point.</p>
+      <button class="popup-btn">Carry on</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-signature">Learning to trust the process, even when the process is confusing. ~ <span class="signature-font">𝒵𝒶𝒾𝓃</span> ☕</p>
+  </footer>
+
+  <!-- Chai Button -->
+  <button class="chai-button" title="Take a chai (tea) break">☕</button>
+  <div class="chai-steam">
+    <div class="steam-particle"></div>
+    <div class="steam-particle"></div>
+    <div class="steam-particle"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<div class="popup" id="homePopup">
+    <div class="popup-content">
+        <button class="popup-close" onclick="closePopup('homePopup')">&times;</button>
+        <h2>Welcome, brave traveller. 🌍</h2>
+        <p>This website contains mild chaos, questionable life choices, and the occasional cup of chai (tea).<br>Proceed wisely.</p>
+        <button class="popup-btn" onclick="closePopup('homePopup')">Alright, let’s go</button>
+    </div>
+</div>
+<div class="floating-quote-container">
+    <div class="floating-quote"></div>
+</div>
+<!DOCTYPE html>

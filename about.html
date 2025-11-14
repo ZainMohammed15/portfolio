@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unfiltered Story — Between Two Worlds</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Between Two Worlds</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">Story</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+      <button id="nightModeToggle" class="night-mode-toggle" title="Toggle night mode">🌙</button>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Story Page Popup -->
+  <div id="storyPopup" class="popup">
+    <div class="popup-inner">
+      <button class="popup-close" aria-label="Close">&times;</button>
+      <h3>Before You Dive In</h3>
+      <p>This story has job changes, confusion, growth, and enough patience to qualify as a superpower.</p>
+      <button class="popup-btn">Start Reading</button>
+    </div>
+  </div>
+
+  <main class="container story-page">
+    <h1>The Unfiltered Story</h1>
+
+    <p>I am Zain, and my career has never followed a straight line. It looks more like a map drawn by someone who got lost but kept walking confidently. I began young in the automotive world and grew into a Lead Technician, spending years fixing problems, diagnosing faults, mentoring apprentices, and wondering why cars always break at the worst possible moment.</p>
+
+    <p>Life took me through different jobs. Food service taught me patience. Royal Mail taught me speed. Security taught me awareness. Debt recovery taught me emotional strength and how to stay calm in conversations nobody enjoys. Every role shaped me.</p>
+
+    <p>After many years as a Lead Technician, I wanted something new. I always enjoyed technology, so I moved into IT. Now I help people with computers, software, and printers that behave like they have personal issues.</p>
+
+    <p>At the same time, I started studying Artificial Intelligence. It is confusing and difficult, but rewarding. I am learning Python, machine learning, and new ways to think. Some days the code listens, other days it argues, but that is part of the journey.</p>
+
+    <p>I do not pretend to have life figured out. I focus on learning, improving, and staying grounded. Outside work, I enjoy food, quiet walks, travelling, horse riding, and moments of peace.</p>
+
+    <p>If you reached this far, thank you. My story is simple, honest, and still in progress.</p>
+
+    <!-- Photo Strip Gallery -->
+    <section class="photo-strip">
+      <h2>Journey Snapshots</h2>
+      <div class="strip-gallery">
+        <div class="strip-item">
+          <img src="1.jpeg" alt="Journey moment 1">
+        </div>
+        <div class="strip-item">
+          <img src="2.jpeg" alt="Journey moment 2">
+        </div>
+        <div class="strip-item">
+          <img src="3.jpeg" alt="Journey moment 3">
+        </div>
+        <div class="strip-item">
+          <img src="4.jpeg" alt="Journey moment 4">
+        </div>
+        <div class="strip-item">
+          <img src="5.jpeg" alt="Journey moment 5">
+        </div>
+        <div class="strip-item">
+          <img src="6.jpeg" alt="Journey moment 6">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <div class="lightbox-container">
+      <img id="lightboxImage" src="" alt="">
+      <p id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+  </div>
+
+  <!-- Chai Loading Animation -->
+  <div id="chaiLoading" class="chai-loading">
+    <div class="chai-cup-load">☕</div>
+    <p>Brewing…</p>
+  </div>
+
+  <!-- Back to Top Chai Button -->
+  <button id="backToTop" class="back-to-top" title="Back to top">☕</button>
+
+  <!-- Scroll-Triggered Quote -->
+  <div id="scrollQuote" class="scroll-quote">
+    <p>"Every job, every chaos, every moment — it all built me."</p>
+  </div>
+
+  <!-- End of Page Popup -->
+  <div id="endPopup" class="popup">
+    <div class="popup-inner">
+      <button class="popup-close" aria-label="Close">&times;</button>
+      <h3>End of the Page</h3>
+      <p>If you've made it this far… either you're impressed, curious, or avoiding responsibilities.</p>
+      <button class="popup-btn">Back to the top</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-signature">Learning to trust the process, even when the process is confusing. ~ <span class="signature-font">𝒵𝒶𝒾𝓃</span> ☕</p>
+  </footer>
+
+  <!-- Chai Button -->
+  <button class="chai-button" title="Take a chai (tea) break">☕</button>
+  <div class="chai-steam">
+    <div class="steam-particle"></div>
+    <div class="steam-particle"></div>
+    <div class="steam-particle"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<div class="popup" id="storyPopup">
+    <div class="popup-content">
+        <button class="popup-close" onclick="closePopup('storyPopup')">&times;</button>
+        <h2>You actually made it to the end. 🙏</h2>
+        <p>Most people tap out way before this point.<br>You? You’re built different.</p>
+        <button class="popup-btn" onclick="scrollTo({ top: 0, behavior: 'smooth' })">Back to the top</button>
+    </div>
+</div>
+<div class="floating-quote-container">
+    <div class="floating-quote"></div>
+</div>
+<!DOCTYPE html>
