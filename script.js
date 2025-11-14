@@ -830,25 +830,6 @@ if (window.location.pathname.includes("skills.html")) {
         }
     });
 }
-/* ========= SKILLS PAGE POPUP (Halfway Trigger — Once Per Session) ========= */
-
-if (window.location.pathname.includes("skills.html")) {
-    const popupId = "skillsPopup";
-
-    // Only run if not already seen
-    if (!sessionStorage.getItem(popupId)) {
-        window.addEventListener("scroll", () => {
-            const scrollPosition = window.scrollY + window.innerHeight;
-            const pageHeight = document.documentElement.scrollHeight;
-
-            // Trigger at halfway exactly
-            if (scrollPosition >= pageHeight * 0.5) {
-                openPopup(popupId);
-                sessionStorage.setItem(popupId, "shown");
-            }
-        });
-    }
-}
 
 /* ========= FIXED POPUP SYSTEM (ONE PER PAGE, NO RANDOMNESS) ========= */
 
